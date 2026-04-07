@@ -4,9 +4,6 @@
 
 Ce projet est une API REST complète pour la gestion des étudiants et des départements, développée avec Spring Boot 3.2.0 et enrichie avec les meilleures pratiques de développement.
 
-## PROJET 100% TERMINÉ - Toutes les 14 questions implémentées avec succès !
-
-### Statut final : COMPLÉT ET PRÊT POUR PRÉSENTATION
 
 ## Architecture
 
@@ -562,4 +559,3 @@ curl http://localhost:8080/api/departements
 
 ---
 
-**Projet 100% TERMINÉ - Prêt pour présentation professorale**
