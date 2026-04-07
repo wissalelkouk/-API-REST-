@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity
 @Table(name = "etudiants")
@@ -26,5 +27,19 @@ public class Etudiant {
 
     @Column(name = "date_naissance", nullable = false)
     private LocalDate dateNaissance;
+
+    @Column(nullable = false, unique = true)
+    private String email;
+
+    @Column(name = "annee_premiere_inscription", nullable = false)
+    private int anneePremiereInscription;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "departement_id", nullable = false)
+    private Departement departement;
+
+    public int age() {
+        return Period.between(this.dateNaissance, LocalDate.now()).getYears();
+    }
 
 }
