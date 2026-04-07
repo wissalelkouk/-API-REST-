@@ -34,9 +34,7 @@ services:
       - etudiant-network
 
   api:
-    build:
-      context: ./api-spring-boot
-      dockerfile: Dockerfile
+    image: wissalelkouk/etudiant-service:1.0
     container_name: spring-boot-api
     ports:
       - "8080:8080"
