@@ -272,36 +272,6 @@ flutter test
 }
 ```
 
-## 🎯 Bonnes pratiques implémentées
-
-1. **Architecture propre** : Séparation des responsabilités
-2. **DTOs** : Isolation des entités de l'API
-3. **Cache** : Optimisation des performances
-4. **Gestion des erreurs** : Réponses HTTP appropriées
-5. **Tests BDD** : Spécifications exécutables
-6. **Documentation** : API auto-documentée
-7. **Conteneurisation** : Déploiement simplifié
-8. **Monitoring** : Health checks et logs
-
-## 📈 Performance
-
-- **Cache Redis** : 10 minutes TTL
-- **Connection pooling** : HikariCP
-- **Lazy loading** : Relations JPA optimisées
-- **Health checks** : Monitoring des services
-
-## 🔐 Sécurité
-
-- **Validation des entrées** : Bean Validation
-- **CORS configuré** : Cross-origin support
-- **Gestion des erreurs** : Pas de fuites d'informations
-
-## 📞 Support
-
-Pour toute question ou problème :
-- **Email** : support@wissal-project.com
-- **Documentation** : http://localhost:8080/swagger-ui.html
-- **Issues** : GitHub Issues
 
 ---
 
